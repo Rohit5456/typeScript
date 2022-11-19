@@ -8,8 +8,11 @@ class Passenger {
         this.lastName = lastName;
         this.frequentFlyerno = flightno;
     }
+    display() {
+        console.log(this.firstName + " " + this.lastName + " "+ this.frequentFlyerno);
+    }
+
 }
 
 var passenger = new Passenger("Jsck", "Sparrow", 102);
-
-console.log(passenger.firstName + " " + passenger.lastName + " "+ passenger.frequentFlyerno);
+passenger.display();
